@@ -1,11 +1,11 @@
 class CreatePatients < ActiveRecord::Migration
   def change
     create_table :patients do |t|
-      t.string :first_name null: false
-      t.string :last_name null: false
-      t.string :phone_number null:false
-      t.string :email null:false
-      t.integer :gender null:false 
+      t.string :first_name
+      t.string :last_name
+      t.string :phone_number
+      t.string :email
+      t.integer :gender
       t.belongs_to :triage, index: true
       t.timestamps null: false
     end

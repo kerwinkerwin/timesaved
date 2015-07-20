@@ -1,3 +1,3 @@
 class Patient < ActiveRecord::Base
-  has_one :triage
+  belongs_to :triage
 end
